@@ -26,8 +26,14 @@ try {
         password:hashedPassword
     })
     if(newUser){
-        generateToken(newUser._id,res);
-        await newUser.save();
+        //Before cr:
+        // generateToken(newUser._id,res);
+        // await newUser.save();
+        //after cr:
+        //presist user first , then issue auth cookie
+        const savedUser = await newUser.save();
+        generateToken(savedUser._id,res);
+
         return res.status(201).json({
             _id:newUser._id,
             fullName:newUser.fullName,
