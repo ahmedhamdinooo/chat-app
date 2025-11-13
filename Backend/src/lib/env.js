@@ -9,4 +9,7 @@ export const ENV = {
     EMAIL_FROM:process.env.EMAIL_FROM,
     EMAIL_FROM_NAME:process.env.EMAIL_FROM_NAME,
     CLIENT_URL:process.env.CLIENT_URL,
+    CLOUD_NAME:process.env.CLOUD_NAME,
+    API_KEY:process.env.API_KEY,
+    API_SECRET:process.env.API_SECRET,
 };
