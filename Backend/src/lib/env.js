@@ -12,4 +12,6 @@ export const ENV = {
     CLOUD_NAME:process.env.CLOUD_NAME,
     API_KEY:process.env.API_KEY,
     API_SECRET:process.env.API_SECRET,
+    ARCJET_KEY:process.env.ARCJET_KEY,
+    ARCJET_ENV:process.env.ARCJET_ENV,
 };
