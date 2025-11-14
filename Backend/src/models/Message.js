@@ -12,9 +12,12 @@ const messageSchema = new mongoose.Schema({
     },
     text:{
         type:String,
+        trim:true,
+        maxLength:2000
     },
     image:{
         type:String,
+        trim: true,
     }
 },{timestamps:true})
 
